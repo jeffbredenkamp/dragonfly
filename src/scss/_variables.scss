@@ -1,0 +1,28 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Typography
+$mono-font-family: monospace;
+
+// Spacing
+$spacing-none: 0;
+$spacing-xxsm: .25rem;
+$spacing-xsm: .5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+$spacing-xlg: 8rem;
+$spacing-xxlg: 16rem;
+
+$layout-spacing: $spacing-xsm;
+$layout-spacing-sm: $spacing-sm;
+$layout-spacing-lg: $spacing-md;
+
+// Responsive breakpoints
+$size-xs: 480px;
+$size-sm: 600px;
+$size-md: 840px;
+$size-lg: 960px;
+$size-xl: 1280px;
+$size-2x: 1440px;
