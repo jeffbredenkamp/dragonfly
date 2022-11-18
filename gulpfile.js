@@ -1,7 +1,7 @@
-var gulp = require('gulp');
-var rename = require('gulp-rename');
-var sass = require( 'gulp-dart-sass' );
-var sourcemaps = require('gulp-sourcemaps');
+const gulp = require('gulp');
+const rename = require('gulp-rename');
+const sass = require( 'gulp-dart-sass' );
+const sourcemaps = require('gulp-sourcemaps');
 
 
 // Scss Production Build
