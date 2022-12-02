@@ -1,9 +1,17 @@
 // Variables
-@import "variables";
+@import "config/variables";
 
 // Reset and dependencies
-@import "normalize";
-@import "base";
+@import "helpers/normalize";
+@import "sections/base";
+@import "sections/typography";
 
 // Components
-@import "grid";
+@import "components/grid";
+@import "components/button";
+
+// Utilities
+@import "utilities/alignment";
+@import "utilities/color";
+@import "utilities/spacing";
+@import "utilities/typography";

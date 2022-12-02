@@ -1,0 +1,68 @@
+//
+// Variables
+// --------------------------------------------------
+
+// Colour Palette
+
+$color-primary: #FF4C41;
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: darken($color-primary, 10%);
+
+// Neutral
+
+$color-neutral: #F4F4F5;
+$color-neutral-lighter: lighten($color-neutral, 20%);
+$color-neutral-light: lighten($color-neutral, 10%);
+$color-neutral-dark: darken($color-neutral, 10%);
+$color-neutral-darker: darken($color-neutral, 20%);
+
+// Text Colours
+$color-text: #52525B;
+$color-heading: #18181B;
+
+// Typography
+$body-font-family: 'Inter', sans-serif;
+$mono-font-family: 'Roboto Mono', monospace;
+
+$font-size-sm: .75rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.25rem;
+
+$line-height-sm: 1.15;
+$line-height-md: 1.5;
+$line-height-lg: 1.75;
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-weight-xbold: 900;
+
+// Spacing
+$spacing-none: 0;
+$spacing-xxsm: .375rem;
+$spacing-xsm: .75rem;
+$spacing-sm: 1.5rem;
+$spacing-md: 3rem;
+$spacing-lg: 6rem;
+$spacing-xlg: 12rem;
+
+// Radius
+$radius-sm: .375rem;
+$radius-md: .75rem;
+$radius-lg: 1.5rem;
+
+// Box Shadow
+
+$shadow-xsm: 0 1px 2px rgba($color-neutral-darker, 0.1), 0 2px 4px rgba($color-neutral-darker, 0.2);
+
+$layout-spacing: $spacing-xsm;
+$layout-spacing-sm: $spacing-sm;
+$layout-spacing-lg: $spacing-md;
+
+// Responsive breakpoints
+$size-xs: 480px;
+$size-sm: 600px;
+$size-md: 840px;
+$size-lg: 960px;
+$size-xl: 1280px;
+$size-2x: 1440px;

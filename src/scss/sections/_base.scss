@@ -17,3 +17,12 @@ html {
     -webkit-box-sizing: inherit;
     box-sizing: inherit;
   }
+
+  body {
+    color: $color-text;
+    font-family: $body-font-family;
+    line-height: $line-height-md;
+    font-weight: $font-weight-light;
+    font-size: $font-size-md;
+    text-rendering: optimizeLegibility;
+  }

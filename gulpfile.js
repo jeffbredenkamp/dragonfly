@@ -30,5 +30,18 @@ gulp.task('dev-build', function(done) {
     done();
 });
 
+// Docs Build
+gulp.task('docs-build', function(done) {
+    gulp.src('./docs/src/scss/docs.scss')
+        .pipe(sass({
+            errorLogToConsole: true,
+            outputStyle: 'compressed'
+        }))
+        .on('error', console.error.bind( console ))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('./docs/dist/css/'))
+    done();
+});
+
 // Production Build Series
 gulp.task('default', gulp.series('prod-build'));

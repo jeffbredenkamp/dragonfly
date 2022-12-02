@@ -1,0 +1,55 @@
+//
+// Button
+// --------------------------------------------------
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background-color: $color-neutral;
+    border-color: $color-neutral;
+    text-align: center;
+    font-weight: $font-weight-light;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid $color-neutral;
+    padding: $spacing-xsm $spacing-sm;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: $radius-sm;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-bottom: 0.25rem;
+    font-family: $body-font-family;
+    box-shadow: $shadow-xsm;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        background-color: darken($color-neutral, 10%);
+        border-color: darken($color-neutral, 10%);
+    }
+
+    &.btn-primary {
+        color: white;
+        background-color: $color-primary;
+        border-color: $color-primary;
+        &:hover {
+          background-color: darken($color-primary, 10%);
+          border-color: darken($color-primary, 10%);
+        }
+      }
+
+      &.btn-secondary {
+        color: $color-primary;
+        background-color: transparent;
+        border-color: $color-primary;
+        &:hover {
+          background-color: darken($color-primary, 10%);
+          border-color: darken($color-primary, 10%);
+          color: white;
+        }
+      }
+}
