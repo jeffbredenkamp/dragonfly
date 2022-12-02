@@ -43,5 +43,19 @@ gulp.task('docs-build', function(done) {
     done();
 });
 
+gulp.task('docs-dragonfly', function(done) {
+    gulp.src('./src/scss/dragonfly.scss')
+        .pipe(sass({
+            errorLogToConsole: true,
+            outputStyle: 'compressed'
+        }))
+        .on('error', console.error.bind( console ))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('./docs/dist/css/'))
+    done();
+});
+
 // Production Build Series
 gulp.task('default', gulp.series('prod-build'));
+
+gulp.task('docs', gulp.series('docs-build', 'docs-dragonfly'));
