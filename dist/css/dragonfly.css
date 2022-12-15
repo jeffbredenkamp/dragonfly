@@ -8,6 +8,7 @@
  */
 /* Document
    ========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap");
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 3 */
@@ -408,7 +409,7 @@ html {
 }
 
 body {
-  color: #52525B;
+  color: #5c6b86;
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   font-weight: 300;
@@ -416,12 +417,24 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+a {
+  color: #006FE0;
+  text-decoration: none;
+}
+a:hover {
+  color: #0056ad;
+}
+
+ul li {
+  margin-bottom: 0.75rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1.5rem;
   line-height: 1.15;
-  font-weight: 300;
-  color: #18181B;
+  font-weight: 700;
+  color: #253143;
   letter-spacing: -0.025em;
 }
 
@@ -478,13 +491,58 @@ p {
   margin-top: 0;
 }
 
+code {
+  background: #F7F7F7;
+  border-radius: 0.1rem;
+  color: #006FE0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  padding: 0.375rem 0.75rem;
+}
+code.code {
+  background: #F7F7F7;
+  color: inherit;
+  display: block;
+  line-height: 1.5;
+  overflow-x: auto;
+  padding: 0.75rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  background: #F7F7F7;
+  border-radius: 0.375rem;
+  color: #5c6b86;
+  display: inline-block;
+  line-height: 1;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
+}
+.label.label-info {
+  background: #006FE0;
+  color: white;
+}
+.label.label-success {
+  background: #03A55A;
+  color: white;
+}
+.label.label-warning {
+  background: #EE8D31;
+  color: white;
+}
+.label.label-error {
+  background: #03A55A;
+  color: white;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   width: 100%;
-  max-width: 1280px;
+  max-width: 992px;
 }
 
 .row {
@@ -655,7 +713,7 @@ p {
     display: block !important;
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .col-lg-12,
   .col-lg-11,
   .col-lg-10,
@@ -906,16 +964,16 @@ p {
 .btn {
   display: inline-block;
   color: #fff;
-  background-color: #F4F4F5;
-  border-color: #F4F4F5;
+  background-color: #F7F7F7;
+  border-color: #F7F7F7;
   text-align: center;
-  font-weight: 300;
+  font-weight: 700;
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid #F4F4F5;
+  border: 1px solid #F7F7F7;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   line-height: 1;
@@ -923,32 +981,52 @@ p {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   margin-bottom: 0.25rem;
   font-family: "Inter", sans-serif;
-  box-shadow: 0 1px 2px rgba(191, 191, 196, 0.1), 0 2px 4px rgba(191, 191, 196, 0.2);
+  box-shadow: 0 2px 4px rgba(222, 222, 222, 0.2);
   cursor: pointer;
   text-decoration: none;
 }
 .btn:hover {
-  background-color: #d9d9dd;
-  border-color: #d9d9dd;
+  background-color: #dedede;
+  border-color: #dedede;
 }
 .btn.btn-primary {
   color: white;
-  background-color: #FF4C41;
-  border-color: #FF4C41;
+  background-color: #006FE0;
+  border-color: #006FE0;
 }
 .btn.btn-primary:hover {
-  background-color: #ff1c0e;
-  border-color: #ff1c0e;
+  background-color: #0056ad;
+  border-color: #0056ad;
 }
 .btn.btn-secondary {
-  color: #FF4C41;
+  color: #006FE0;
   background-color: transparent;
-  border-color: #FF4C41;
+  border-color: #006FE0;
 }
 .btn.btn-secondary:hover {
-  background-color: #ff1c0e;
-  border-color: #ff1c0e;
+  background-color: #0056ad;
+  border-color: #0056ad;
   color: white;
+}
+
+.card {
+  box-shadow: 0px 4px 20px 0px rgba(222, 222, 222, 0.3);
+  border-bottom: 2px solid #006FE0;
+  border-radius: 0.375rem;
+  background: white;
+}
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+.card .card-body {
+  padding: 3rem;
+}
+.card .card-body p:last-of-type {
+  margin-bottom: 0;
+}
+.card .card-body .card-icon {
+  margin-bottom: 0.75rem;
 }
 
 .text-center {
@@ -964,7 +1042,27 @@ p {
 }
 
 .text-color-primary {
-  color: #FF4C41;
+  color: #006FE0;
+}
+
+.text-color-error {
+  color: #DC3055;
+}
+
+.text-color-warning {
+  color: #EE8D31;
+}
+
+.text-color-success {
+  color: #03A55A;
+}
+
+.bg-color-neutral {
+  background: #F7F7F7;
+}
+
+.bg-color-neutral-dark {
+  background: #eaeaea;
 }
 
 .pt-0 {

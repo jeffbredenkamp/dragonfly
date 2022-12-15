@@ -1,0 +1,159 @@
+// Docs Container
+
+.docs-container {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: nowrap;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+// Docs Brand
+
+.docs-brand {
+    left: 0;
+    position: fixed;
+    top: 0;
+    background: #eaeaea;
+    padding: 1rem 1.5rem;
+    width: 15rem;
+    display: flex;
+
+    a {
+    align-items: center;
+    display: inline-flex;
+    width: auto;
+    
+    h1 {
+        font-size: 1.25rem;
+        display: inline-block;
+        margin-bottom: 0;
+        margin-left: .75rem;
+    }
+
+    .docs-logo {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #006fe0;
+        display: inline-block;
+        background-image: url(../img/dragonfly.png);
+        background-repeat: no-repeat;
+        background-size: 75%;
+        background-position: center center;
+    }
+}
+}
+
+// Content
+
+.docs-content {
+    flex: 1 1 auto;
+    height: 100%;
+    padding-top: 3rem;
+}
+
+
+// Sidebar
+
+.docs-sidebar {
+    bottom: 0;
+    left: 0;
+    max-width: 220px;
+    overflow-y: auto;
+    position: relative;
+    top: 0;
+    z-index: 200;
+    flex: 0 0 auto;
+    padding: 1.5rem;
+    max-width: 15rem;
+    width: 100%;
+
+    .docs-nav {
+            bottom: 1.5rem;
+            -webkit-overflow-scrolling: touch;
+            overflow-y: auto;
+            position: fixed;
+            top: 4.5rem;
+            width: 12rem;
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            ul {
+                padding-left: 1rem;
+                font-size: .85rem;
+
+                li {
+                    &:first-of-type {
+                        margin-top: 0.75rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding: 2rem 0;
+
+    p {
+        margin: 0;
+    }
+}
+
+// Syntac highlighting
+
+.code {
+    .hl-tag{
+        color:#5c6b86;
+        display: block;
+    }
+
+    .hl-comment{
+        color:#bcc3ce
+    }
+
+    .hl-number {
+        color:#006fe0
+    }
+
+    .hl-string {
+        color:#006fe0
+    }
+
+    .hl-title {
+        color:#006fe0
+    }
+
+    .hl-attribute {
+        color:#DC3055
+    }
+
+    .hl-built_in {
+        color:#DC3055
+    }
+
+    .hl-keyword {
+        color:#DC3055
+    }
+
+    .hl-name {
+        color:#DC3055
+    }
+
+    .hl-variable {
+        color:#DC3055
+    }
+
+    .hl-hexcolor {
+        color:#5c6b86
+    }
+
+    .hl-value {
+        color:#5c6b86
+    }
+
+}

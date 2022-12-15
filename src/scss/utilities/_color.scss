@@ -7,3 +7,25 @@
 .text-color-primary {
     color: $color-primary;
 }
+
+.text-color-error {
+    color: $color-error;
+}
+
+.text-color-warning {
+    color: $color-warning;
+}
+
+.text-color-success {
+    color: $color-success;
+}
+
+// Background Colour
+
+.bg-color-neutral {
+    background: $color-neutral;
+}
+
+.bg-color-neutral-dark {
+    background: $color-neutral-dark;
+}

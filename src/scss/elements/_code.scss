@@ -1,0 +1,23 @@
+//
+// Code
+// --------------------------------------------------
+
+code {
+    background: $color-neutral;
+    border-radius: 0.1rem;
+    color: $color-primary;
+    font-size: $font-size-sm;
+    line-height: $line-height-md;
+    padding: $spacing-xxsm $spacing-xsm;
+
+    &.code {
+        background: $color-neutral;
+        color: inherit;
+        display: block;
+        line-height: $line-height-md;
+        overflow-x: auto;
+        padding: $spacing-xsm;
+        width: 100%;
+        margin-bottom: $spacing-sm;
+    }
+}

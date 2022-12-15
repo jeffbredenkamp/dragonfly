@@ -1,0 +1,29 @@
+//
+// Card
+// --------------------------------------------------
+
+.card {
+    box-shadow: $shadow-md;
+    border-bottom: 2px solid $color-primary;
+    border-radius: $radius-sm;
+    background: white;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+        font-size: $font-size-lg;
+    }
+
+    .card-body {
+        padding: $spacing-md;
+
+        p {
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        .card-icon {
+            margin-bottom: $spacing-xsm;
+        }
+    }
+}

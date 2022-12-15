@@ -6,9 +6,14 @@
 @import "sections/base";
 @import "sections/typography";
 
+// Elements
+@import "elements/code";
+@import "elements/label";
+
 // Components
 @import "components/grid";
 @import "components/button";
+@import "components/card";
 
 // Utilities
 @import "utilities/alignment";

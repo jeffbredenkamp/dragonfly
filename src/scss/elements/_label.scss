@@ -1,0 +1,33 @@
+//
+// Label
+// --------------------------------------------------
+
+.label {
+    background: $color-neutral;
+    border-radius: $radius-sm;
+    color: $color-text;
+    display: inline-block;
+    line-height: $line-height-xsm;
+    padding: $spacing-xxsm $spacing-xsm;
+    font-size: $font-size-sm;
+
+    &.label-info {
+        background: $color-primary;
+        color: white;
+    }
+
+    &.label-success {
+        background: $color-success;
+        color: white;
+    }
+
+    &.label-warning {
+        background: $color-warning;
+        color: white;
+    }
+
+    &.label-error {
+        background: $color-success;
+        color: white;
+    }
+}
