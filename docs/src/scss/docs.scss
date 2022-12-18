@@ -74,6 +74,7 @@
             bottom: 1.5rem;
             -webkit-overflow-scrolling: touch;
             overflow-y: auto;
+            overflow-x: hidden;
             position: fixed;
             top: 4.5rem;
             width: 12rem;
@@ -95,6 +96,56 @@
         }
     }
 }
+
+// Nav collapse
+
+.accordion{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:auto;
+
+    .a-container{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        padding-bottom:5px;
+
+        .a-btn {
+            background: none;
+            text-align: left;
+            padding: 0;
+            border: none;
+            cursor: pointer;
+            color: #006fe0;
+
+            &:hover {
+                color: #0056ad;
+            }
+        }
+
+        .a-panel{
+            width:100%;
+            color:#5c6b86;
+            transition:all .2s ease-in-out;
+            opacity:0;
+            height:auto;
+            max-height:0;
+            overflow:hidden;
+            padding:0;
+            margin-left: 1rem;
+        }
+
+        &.active {
+            .a-panel{
+                opacity:1;
+                max-height:500px
+            }
+        }
+    }
+
+}
+
 
 footer {
     padding: 2rem 0;
