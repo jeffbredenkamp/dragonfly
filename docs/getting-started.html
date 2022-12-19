@@ -2,133 +2,199 @@
 <html lang="en">
   <head>
     <title>Dragonfly.css CSS Framework</title>
-    <meta charset="utf-8">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Dragonfly.css CSS Framework is a lightweight, responsive and CSS framework for faster development. Dragonfly includes basic styles for elements, responsive flexbox layout system, CSS components, utilities classes and a clean modern design.">
-    <meta name="author" content="Jeff Bredenkamp">
-    <meta property="og:url" content="https://jeffbredenkamp.github.io/dragonfly/">
-    <meta property="og:title" content="Dragonfly.css CSS Framework">
-    <meta property="og:description" content="Dragonfly.css CSS Framework is a lightweight, responsive and CSS framework for faster development. Dragonfly includes basic styles for elements, responsive flexbox layout system, CSS components, utilities classes and a clean modern design.">
-    <link rel="icon" href="img/favicons/favicon.png">
-    <link rel="stylesheet" href="dist/css/dragonfly.min.css">
-    <link rel="stylesheet" href="dist/css/docs.min.css">
-    <link rel="canonical" href="https://jeffbredenkamp.github.io/dragonfly/">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="Dragonfly.css CSS Framework is a lightweight, responsive and CSS framework for faster development. Dragonfly includes basic styles for elements, responsive flexbox layout system, CSS components, utilities classes and a clean modern design." />
+    <meta name="author" content="Jeff Bredenkamp" />
+    <meta property="og:url" content="https://jeffbredenkamp.github.io/dragonfly/" />
+    <meta property="og:title" content="Dragonfly.css CSS Framework" />
+    <meta property="og:description" content="Dragonfly.css CSS Framework is a lightweight, responsive and CSS framework for faster development. Dragonfly includes basic styles for elements, responsive flexbox layout system, CSS components, utilities classes and a clean modern design." />
+    <link rel="icon" href="img/favicons/favicon.png" />
+    <link rel="stylesheet" href="dist/css/dragonfly.min.css" />
+    <link rel="stylesheet" href="dist/css/docs.min.css" />
+    <link rel="stylesheet" href="dist/css/syntax-highlight.css" />
+    <link rel="canonical" href="https://jeffbredenkamp.github.io/dragonfly/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
   </head>
-<body>
-
+  <body>
     <div class="docs-container">
-
-    <div class="docs-sidebar bg-color-neutral">
+      <div class="docs-header">
         <div class="docs-brand">
-            <a href="index.html"><span class="docs-logo"></span><h1>Dragonfly.css</h1></a>
+          <a href="index.html">
+            <span class="docs-logo"></span>
+            <h1>Dragonfly.css</h1>
+          </a>
         </div>
+        <div class="header-btns d-flex">
+          <a class="btn btn-sm btn-primary" href="https://github.com/jeffbredenkamp/dragonfly" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+      </div>
+      <div class="docs-sidebar">
         <nav class="docs-nav">
-            <ul class="accordion">
-                <li class="a-container active">
-                  <button class="a-btn">Getting Started <span></span></button>
-                    <ul class="a-panel">
-                        <li>Installation</li>
-                    </ul>
+          <ul class="accordion">
+            <li class="a-container active">
+              <a href="getting-started.html" class="a-btn">
+                <i class="fa-solid fa-house"></i> Getting Started <span></span>
+              </a>
+            </li>
+            <li class="a-container">
+              <button class="a-btn">
+                <i class="fa-solid fa-pen-ruler"></i> Visual Styles <span></span>
+              </button>
+              <ul class="a-panel">
+                <li>Typography</li>
+                <li>Color</li>
+                <li>Spacing</li>
+              </ul>
+            </li>
+            <li class="a-container">
+              <button class="a-btn">
+                <i class="fa-solid fa-laptop-code"></i> Elements <span></span>
+              </button>
+              <ul class="a-panel">
+                <li>Code</li>
+                <li>Label</li>
+                <li>Form</li>
+                <li>Label</li>
+              </ul>
+            </li>
+            <li class="a-container">
+              <button class="a-btn">
+                <i class="fa-solid fa-ruler"></i> Layout <span></span>
+              </button>
+              <ul class="a-panel">
+                <li>
+                  <a href="grid.html">Grid</a>
                 </li>
-                <li class="a-container">
-                    <button class="a-btn">Elements <span></span></button>
-                      <ul class="a-panel">
-                          <li>Code</li>
-                          <li>Label</li>
-                      </ul>
-                  </li>
-                  <li class="a-container">
-                    <button class="a-btn">Layout <span></span></button>
-                      <ul class="a-panel">
-                          <li>Grid</li>
-                      </ul>
-                  </li>
-                  <li class="a-container">
-                    <button class="a-btn">Components <span></span></button>
-                      <ul class="a-panel">
-                          <li>Button</li>
-                          <li>Card</li>
-                      </ul>
-                  </li>
-                  <li class="a-container">
-                    <button class="a-btn">Utilities <span></span></button>
-                      <ul class="a-panel">
-                          <li>Spacing</li>
-                      </ul>
-                  </li>
-            </ul>
-            </nav>
-       
-
-    </div>
-
-    <div class="docs-content">
-
+              </ul>
+            </li>
+            <li class="a-container">
+              <button class="a-btn">
+                <i class="fa-solid fa-layer-group"></i> Components <span></span>
+              </button>
+              <ul class="a-panel">
+                <li>Avatars</li>
+                <li>Buttons</li>
+                <li>Badges</li>
+                <li>Bars</li>
+                <li>Breadcrumbs</li>
+                <li>Cards</li>
+                <li>Modals</li>
+                <li>Nav</li>
+                <li>Pagination</li>
+                <li>Panels</li>
+                <li>Steps</li>
+                <li>Tabs</li>
+                <li>Toasts</li>
+                <li>Tooltips</li>
+              </ul>
+            </li>
+            <li class="a-container">
+              <button class="a-btn">
+                <i class="fa-solid fa-screwdriver-wrench"></i> Utilities <span></span>
+              </button>
+              <ul class="a-panel">
+                <li>Colors</li>
+                <li>Spacing</li>
+                <li>Display</li>
+                <li>Position</li>
+                <li>Text</li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="docs-content">
         <div class="container">
-            <div class="row">
-                <div class="col col-12">
-                    <h2>Getting Started</h2>
-
-                    <p class="font-lg"><strong>Dragonfly.css</strong> is a lightweight, responsive CSS framework for faster development.</p>
-
-                    <p>Dragonfly includes basic styles for elements, responsive flexbox layout system, CSS components, utilities classes and a clean modern design.</p>
-
-                    <h3>Installation</h3>
-
-                    <h4>Install manually</h4>
-
-                    <p>Download the compiled and minified Dragonfly CSS.</p>
-
-                    <p>
-                    <a class="btn btn-primary" href="https://github.com/jeffbredenkamp/dragonfly/archive/refs/heads/main.zip">Download Dragonfly.css</a>
-                    </p>
-
-                    <p>Include <code>dragonfly.css</code> located in <strong>/dist</strong> in your website or Web app.</p>
-
-                    <code class="code"><span class="hl-tag">&lt;<span class="hl-name">link</span> <span class="hl-attr">rel</span>=<span class="hl-string">"stylesheet"</span> <span class="hl-attr">href</span>=<span class="hl-string">"dragonfly.min.css"</span>&gt;</span>
-                        <span class="hl-tag">&lt;<span class="hl-name">link</span> <span class="hl-attr">rel</span>=<span class="hl-string">"stylesheet"</span> <span class="hl-attr">href</span>=<span class="hl-string">"dragonfly-icons.min.css"</span>&gt;</span>
-                    </code>
-
-                    <h4>Install from CDN</h4>
-
-                    <p>Coming soon!</p>
-
-                    <h4>Install with NPM</h4>
-
-                    <p>Coming soon!</p>
-
-                    <h3>Browser Support</h3>
-
-                    <p>Dragonfly uses Autoprefixer to make most styles compatible with earlier browsers and Normalize.css for CSS resets. Dragonfly is designed for modern browsers. For best compatibility, these browsers are recommended:</p>
-
-                    <ul>
-                        <li>Chrome <span class="label label-success">Supported</span></li>
-                        <li>Microsoft Edge <span class="label label-success">Supported</span></li>
-                        <li>Firefox <span class="label label-success">Supported</span></li>
-                        <li>Safari <span class="label label-success">Supported</span></li>
-                        <li>Opera <span class="label label-success">Supported</span></li>
-                        <li>Internet Explorer <span class="label label-success">IE10+</span></li>
-                    </ul>
-                    <p>Dragonfly supports Internet Explorer 10+, but some HTML5 and CSS3 features are not perfectly supported by Internet Explorer.</p>
-
-                    <h3>Accessibility</h3>
-
-                    <p>Coming soon!</p>
-
-                    <footer>
-                        <p>Designed and built with <span class="text-color-error">♥</span> by Jeff Bredenkamp. Licensed under the <a href="https://github.com/jeffbredenkamp/dragonfly/blob/main/LICENSE">MIT License</a></p>
-                    </footer>
-                </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h2>Getting Started</h2>
+              <p class="font-lg">
+                <strong>Dragonfly.css</strong> is a lightweight, responsive CSS framework for faster development.
+              </p>
+              <p>Dragonfly includes basic styles for elements, responsive flexbox layout system, CSS components, utilities classes and a clean modern design.</p>
+              <h3>Installation</h3>
+              <h4>Install manually</h4>
+              <p>Download the compiled and minified Dragonfly CSS.</p>
+              <p>
+                <a class="btn btn-primary" href="https://github.com/jeffbredenkamp/dragonfly/archive/refs/heads/main.zip">Download Dragonfly.css</a>
+              </p>
+              <p>Include <code>dragonfly.css</code> located in <strong>/dist</strong> in your website or Web app. </p>
+<pre><code data-language="html">&lt;link rel="stylesheet" href="dragonfly.min.css"&gt;
+&lt;link rel="stylesheet" href="dragonfly-icons.min.css"&gt;</code></pre>
+              <h4>Install from CDN</h4>
+              <p>Coming soon!</p>
+              <h4>Install with NPM</h4>
+              <p>Coming soon!</p>
+              <h3>Browser Support</h3>
+              <p> Dragonfly uses Autoprefixer to make most styles compatible with earlier browsers and Normalize.css for CSS resets. Dragonfly is designed for modern browsers. For best compatibility, these browsers are recommended: </p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Logo</th>
+                    <th align="center">Vendor</th>
+                    <th align="center">Browser</th>
+                    <th align="center">Version</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img class="browser-icon" src="https://assets.codepen.io/772926/safari.png" alt="Safari" />
+                    </td>
+                    <td align="center">Apple</td>
+                    <td align="center">Safari</td>
+                    <td align="center">Latest two</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="browser-icon" src="https://assets.codepen.io/772926/chrome.png" alt="Chrome" />
+                    </td>
+                    <td align="center">Google</td>
+                    <td align="center">Chrome</td>
+                    <td align="center">Latest two</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="browser-icon" src="https://assets.codepen.io/772926/edge.png" alt="EDGE" />
+                    </td>
+                    <td align="center">Microsoft</td>
+                    <td align="center">Edge</td>
+                    <td align="center">Latest two</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="browser-icon" src="https://assets.codepen.io/772926/ie.png" alt="IE" />
+                    </td>
+                    <td align="center">Microsoft</td>
+                    <td align="center">Internet Explorer</td>
+                    <td align="center">10*</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img class="browser-icon" src="https://assets.codepen.io/772926/firefox.png" alt="Firefox" />
+                    </td>
+                    <td align="center">Mozilla</td>
+                    <td align="center">Firefox</td>
+                    <td align="center">Latest two</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p>* Dragonfly supports Internet Explorer 10+, but some HTML5 and CSS3 features are not perfectly supported by Internet Explorer.</p>
+              <h3>Accessibility</h3>
+              <p>Coming soon!</p>
+              <footer>
+                <p>Designed and built with <span class="text-color-error">♥</span> by Jeff Bredenkamp. Licensed under the <a href="https://github.com/jeffbredenkamp/dragonfly/blob/main/LICENSE">MIT License</a>
+                </p>
+              </footer>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-
-    </div>
-
-    
-<script src="dist/js/docs.js"></script>
-</body>
+    <script src="dist/js/docs.js"></script>
+    <script src="dist/js/rainbow.min.js"></script>
+  </body>
 </html>

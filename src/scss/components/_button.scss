@@ -52,4 +52,15 @@
           color: white;
         }
       }
+
+      // Size
+
+      &.btn-sm {
+        padding: $spacing-xxsm $spacing-xsm;
+        font-size: $font-size-sm;
+      }
+      &.btn-lg {
+        padding: $spacing-sm $spacing-md;
+        font-size: $font-size-lg;
+      }
 }

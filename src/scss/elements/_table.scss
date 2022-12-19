@@ -1,0 +1,32 @@
+//
+// Tables
+// --------------------------------------------------
+
+table {
+    background: #fff;
+    border-collapse: collapse;
+    max-width: 100%;
+    width: 100%;
+
+    th {
+        background: #fff;
+        border-bottom: 2px solid $color-primary;
+        vertical-align: bottom;
+        padding: $spacing-xsm $spacing-xsm;
+        text-align: left;
+        color: $color-heading;
+        font-size: $font-size-sm;
+  }
+
+  tr {
+    &:nth-of-type(2n) {
+        background: $color-neutral;
+    }
+
+    td {
+        padding: $spacing-xsm $spacing-xsm;
+        text-align: left;
+        font-size: $font-size-sm;
+    }
+  }
+}
