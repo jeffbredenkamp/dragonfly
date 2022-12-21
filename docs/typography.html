@@ -34,18 +34,18 @@
       <div class="docs-sidebar">
         <nav class="docs-nav">
           <ul class="accordion">
-            <li class="a-container active">
+            <li class="a-container">
               <a href="getting-started.html" class="a-btn">
                 <i class="fa-solid fa-house"></i> Getting Started <span></span>
               </a>
             </li>
-            <li class="a-container">
+            <li class="a-container active">
               <button class="a-btn">
                 <i class="fa-solid fa-pen-ruler"></i> Visual Styles <span></span>
               </button>
               <ul class="a-panel">
                 <li>
-                  <a href="typography.html">Typography</a>
+                    <a href="typography.html">Typography</a>
                 </li>
                 <li>Color</li>
                 <li>Spacing</li>
@@ -112,81 +112,60 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <h2>Getting Started</h2>
+              <h2>Typography</h2>
               <p class="font-lg">
-                <strong>Dragonfly.css</strong> is a lightweight, responsive CSS framework for faster development.
+                Typography scale to establish hierarchy and communicate important content.
               </p>
-              <p>Dragonfly includes basic styles for elements, responsive flexbox layout system, CSS components, utilities classes and a clean modern design.</p>
-              <h3>Installation</h3>
-              <h4>Install manually</h4>
-              <p>Download the compiled and minified Dragonfly CSS.</p>
-              <p>
-                <a class="btn btn-primary" href="https://github.com/jeffbredenkamp/dragonfly/archive/refs/heads/main.zip">Download Dragonfly.css</a>
-              </p>
-              <p>Include <code>dragonfly.css</code> located in <strong>/dist</strong> in your website or Web app. </p>
-<pre><code data-language="html">&lt;link rel="stylesheet" href="dragonfly.min.css"&gt;
-&lt;link rel="stylesheet" href="dragonfly-icons.min.css"&gt;</code></pre>
-              <h4>Install from CDN</h4>
-              <p>Coming soon!</p>
-              <h4>Install with NPM</h4>
-              <p>Coming soon!</p>
-              <h3>Browser Support</h3>
-              <p> Dragonfly uses Autoprefixer to make most styles compatible with earlier browsers and Normalize.css for CSS resets. Dragonfly is designed for modern browsers. For best compatibility, these browsers are recommended: </p>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Logo</th>
-                    <th align="center">Vendor</th>
-                    <th align="center">Browser</th>
-                    <th align="center">Version</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <img class="browser-icon" src="https://assets.codepen.io/772926/safari.png" alt="Safari" />
-                    </td>
-                    <td align="center">Apple</td>
-                    <td align="center">Safari</td>
-                    <td align="center">Latest two</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img class="browser-icon" src="https://assets.codepen.io/772926/chrome.png" alt="Chrome" />
-                    </td>
-                    <td align="center">Google</td>
-                    <td align="center">Chrome</td>
-                    <td align="center">Latest two</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img class="browser-icon" src="https://assets.codepen.io/772926/edge.png" alt="EDGE" />
-                    </td>
-                    <td align="center">Microsoft</td>
-                    <td align="center">Edge</td>
-                    <td align="center">Latest two</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img class="browser-icon" src="https://assets.codepen.io/772926/ie.png" alt="IE" />
-                    </td>
-                    <td align="center">Microsoft</td>
-                    <td align="center">Internet Explorer</td>
-                    <td align="center">10*</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img class="browser-icon" src="https://assets.codepen.io/772926/firefox.png" alt="Firefox" />
-                    </td>
-                    <td align="center">Mozilla</td>
-                    <td align="center">Firefox</td>
-                    <td align="center">Latest two</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p>* Dragonfly supports Internet Explorer 10+, but some HTML5 and CSS3 features are not perfectly supported by Internet Explorer.</p>
-              <h3>Accessibility</h3>
-              <p>Coming soon!</p>
+              
+              <h3>Font: <span class="text-light">Inter</span></h3>
+
+              <p>Global default 16px</p>
+
+              <div class="row mt-md">
+                <div class="col-md-3">
+                    <h1 class="text-xbold mb-none">Aa</h1>
+                    <h4 class="text-xbold mt-none">Inter xBold</h4>
+                </div>
+                <div class="col-md-3">
+                    <h1 class="text-bold mb-none">Aa</h1>
+                    <h4 class="text-bold mt-none">Inter Bold</h4>
+                </div>
+                <div class="col-md-3">
+                    <h1 class="text-regular mb-none">Aa</h1>
+                    <h4 class="text-regular mt-none">Inter Regular</h4>
+                </div>
+                <div class="col-md-3">
+                    <h1 class="text-light mb-none">Aa</h1>
+                    <h4 class="text-light mt-none">Inter Light</h4>
+                </div>
+                
+            </div>
+        
+            <div class="row mt-sm">
+                <div class="col-md-6">
+                    <h3>Heading Scale</h3>
+        
+                    <h1>H1 Bold 3rem</h1>
+                    <h2>H2 Bold 2.5rem</h2>
+                    <h3>H3 Bold 2rem</h3>
+                    <h4>H4 Bold 1.5rem</h4>
+                    <h5>H5 Bold 1.25rem</h5>
+                    <h6>H6 Bold 1rem</h6>
+                </div>
+                <div class="col-md-6">
+                    <h3>Body Text</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        
+            <p><strong>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</strong></p>
+        
+            <p><i>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</i></p>
+        
+                </div>
+            </div>
+        
+            <p class="subheadline">Subheadline Normal 1.25rem</p>
+
+
               <footer>
                 <p>Designed and built with <span class="text-color-error">♥</span> by Jeff Bredenkamp. Licensed under the <a href="https://github.com/jeffbredenkamp/dragonfly/blob/main/LICENSE">MIT License</a>
                 </p>
