@@ -11,10 +11,10 @@ $color-primary-dark: darken($color-primary, 10%);
 // Neutral
 
 $color-neutral: #f2f5fa;
-$color-neutral-lighter: lighten($color-neutral, 10%);
+$color-neutral-lighter: lighten($color-neutral, 7%);
 $color-neutral-light: lighten($color-neutral, 5%);
 $color-neutral-dark: darken($color-neutral, 5%);
-$color-neutral-darker: darken($color-neutral, 10%);
+$color-neutral-darker: darken($color-neutral, 7%);
 
 // Success
 $color-success: #03A55A;
@@ -59,6 +59,7 @@ $spacing-sm: 1.5rem;
 $spacing-md: 3rem;
 $spacing-lg: 6rem;
 $spacing-xlg: 12rem;
+$spacing-xxlg: 24rem;
 
 // Radius
 $radius-sm: .375rem;

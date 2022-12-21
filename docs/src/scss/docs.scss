@@ -83,7 +83,7 @@
     top: 0;
     z-index: 1;
     flex: 0 0 auto;
-    padding: 1.5rem;
+    padding: 1.5rem 0 0 0;
     max-width: 15rem;
     width: 100%;
     border-right: 1px solid #dfdfdf;
@@ -92,8 +92,12 @@
             bottom: 1.5rem;
             -webkit-overflow-scrolling: touch;
             position: fixed;
-            top: 4.5rem;
-            width: 12rem;
+            top: 4rem;
+            width: 15rem;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            padding: 1.5rem;
+            height: calc(100vh - 4rem);
 
         ul {
             list-style: none;
@@ -179,7 +183,7 @@
             max-height:0;
             overflow:hidden;
             padding:0;
-            margin-left: .75rem;
+            margin-left: 2rem;
 
             li {
                 a {

@@ -2,6 +2,32 @@
 // Spacing
 // --------------------------------------------------
 
+// Padding All
+
+.p-0 {
+    margin: 0;
+}
+
+.p-xsm {
+    padding: $spacing-xsm;
+}
+
+.p-sm {
+    padding: $spacing-sm;
+}
+
+.p-md {
+    padding: $spacing-md;
+}
+
+.p-lg {
+    padding: $spacing-lg;
+}
+
+.p-xlg {
+    padding: $spacing-xlg;
+}
+
 // Padding Top
 
 .pt-0 {
@@ -52,6 +78,92 @@
 
 .pb-xlg {
     padding-bottom: $spacing-xlg;
+}
+
+// Padding Right
+
+.pr-0 {
+    padding-right: 0;
+}
+
+.pr-xxsm {
+    padding-right: $spacing-xxsm;
+}
+
+.pr-xsm {
+    padding-right: $spacing-xsm;
+}
+
+.pr-sm {
+    padding-right: $spacing-sm;
+}
+
+.pr-md {
+    padding-right: $spacing-md;
+}
+
+.pr-lg {
+    padding-right: $spacing-lg;
+}
+
+.pr-xlg {
+    padding-right: $spacing-xlg;
+}
+
+.pr-xxlg {
+    padding-right: $spacing-xxlg;
+}
+
+// Padding Left
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.pl-xsm {
+    padding-left: $spacing-xsm;
+}
+
+.pl-sm {
+    padding-left: $spacing-sm;
+}
+
+.pl-md {
+    padding-left: $spacing-md;
+}
+
+.pl-lg {
+    padding-left: $spacing-lg;
+}
+
+.pl-xlg {
+    padding-left: $spacing-xlg;
+}
+
+// Margin All
+
+.m-0 {
+    margin: 0;
+}
+
+.m-xsm {
+    margin: $spacing-xsm;
+}
+
+.m-sm {
+    margin: $spacing-sm;
+}
+
+.m-md {
+    margin: $spacing-md;
+}
+
+.m-lg {
+    margin: $spacing-lg;
+}
+
+.m-xlg {
+    margin: $spacing-xlg;
 }
 
 // Margin Top
