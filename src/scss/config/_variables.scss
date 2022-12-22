@@ -36,9 +36,11 @@ $color-heading: #253143;
 $body-font-family: 'Inter', sans-serif;
 $mono-font-family: 'Roboto Mono', monospace;
 
+$font-size-xsm: .5rem;
 $font-size-sm: .75rem;
 $font-size-md: 1rem;
 $font-size-lg: 1.25rem;
+$font-size-xlg: 1.5rem;
 
 $line-height-xsm: 1;
 $line-height-sm: 1.15;
@@ -53,13 +55,13 @@ $font-weight-xbold: 900;
 
 // Spacing
 $spacing-none: 0;
-$spacing-xxsm: .375rem;
-$spacing-xsm: .75rem;
-$spacing-sm: 1.5rem;
-$spacing-md: 3rem;
-$spacing-lg: 6rem;
-$spacing-xlg: 12rem;
-$spacing-xxlg: 24rem;
+$spacing-xxsm: .25rem;
+$spacing-xsm: .5rem;
+$spacing-sm: 1rem;
+$spacing-md: 2rem;
+$spacing-lg: 4rem;
+$spacing-xlg: 8rem;
+$spacing-xxlg: 16rem;
 
 // Radius
 $radius-sm: .375rem;

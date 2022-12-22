@@ -1,0 +1,91 @@
+//
+// Avatar
+// --------------------------------------------------
+
+.avatar {
+    background: $color-primary;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    font-size: $font-size-md;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-sm;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+    height: $spacing-md;
+    width: $spacing-md;
+
+    img {
+        border-radius: 50%;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+      }
+
+      &.avatar-xl {
+        font-size: $font-size-xlg;
+        width: calc($spacing-md + $spacing-md);
+        height: calc($spacing-md + $spacing-md);
+      }
+
+      &.avatar-lg {
+        font-size: $font-size-lg;
+        width: calc($spacing-md + $spacing-xsm);
+        height: calc($spacing-md + $spacing-xsm);
+      }
+
+      &.avatar-sm {
+        font-size: $font-size-sm;
+        width: calc($spacing-sm + $spacing-xsm);
+        height: calc($spacing-sm + $spacing-xsm);
+      }
+
+      &.avatar-xsm {
+        font-size: $font-size-xsm;
+        width: calc($spacing-xsm + $spacing-xsm);
+        height: calc($spacing-xsm + $spacing-xsm);
+      }
+
+      &[data-initial] {
+        &:before {
+            color:currentColor;
+            content:attr(data-initial);
+            left:50%;
+            position:absolute;
+            top:50%;
+            transform:translate(-50%,-50%);
+            z-index:1;
+        }
+      }
+
+      .avatar-status {
+        background: #fff;
+        bottom: 14.64%;
+        height: 50%;
+        padding: 0.1rem;
+        position: absolute;
+        right: 14.64%;
+        transform: translate(50%,50%);
+        width: 50%;
+        z-index: 2;
+        background: $color-neutral-dark;
+        border-radius: 50%;
+        box-shadow: 0 0 0 0.1rem #fff;
+        height: 0.5em;
+        width: 0.5em;
+
+        &.online {
+            background: $color-success;
+          }
+
+          &.busy {
+            background: $color-error;
+          }
+
+          &.away {
+            background: $color-warning;
+          }
+      }
+  }

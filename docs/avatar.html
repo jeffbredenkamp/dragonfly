@@ -39,7 +39,7 @@
                 <i class="fa-solid fa-house"></i> Getting Started <span></span>
               </a>
             </li>
-            <li class="a-container active">
+            <li class="a-container">
               <button class="a-btn">
                 <i class="fa-solid fa-pen-ruler"></i> Visual Styles <span></span>
               </button>
@@ -76,13 +76,13 @@
                 </li>
               </ul>
             </li>
-            <li class="a-container">
+            <li class="a-container active">
               <button class="a-btn">
                 <i class="fa-solid fa-layer-group"></i> Components <span></span>
               </button>
               <ul class="a-panel">
                 <li>
-                  <a href="avatar.html">Avatar</a>
+                    <a href="avatar.html">Avatar</a>
                 </li>
                 <li>Buttons</li>
                 <li>Badges</li>
@@ -118,33 +118,98 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <h2>Spacing</h2>
+              <h2>Avatars</h2>
               <p class="font-lg">
-                A simple spacing system to help deliver clear and functional layouts.
-              </p>
-              
-              <div class="mb-xsm">
-                <div class="pr-xxsm pt-sm bg-color-primary d-inline radius-sm"></div><span class="pl-sm text-bold">xxsmall: 0.25rem</span>
-            </div>
-            <div class="mb-xsm">
-              <div class="pr-xsm pt-sm bg-color-primary d-inline radius-sm"></div><span class="pl-sm text-bold">xsmall: 0.5rem</span>
-          </div>
-          <div class="mb-xsm">
-            <div class="pr-sm pt-sm bg-color-primary d-inline radius-sm"></div><span class="pl-sm text-bold">small: 1rem</span>
-        </div>
-        <div class="mb-xsm">
-          <div class="pr-md pt-sm bg-color-primary d-inline radius-sm"></div><span class="pl-sm text-bold">medium: 2rem</span>
-      </div>
-      <div class="mb-xsm">
-        <div class="pr-lg pt-sm bg-color-primary d-inline radius-sm"></div><span class="pl-sm text-bold">large: 4rem</span>
-      </div>
-      <div class="mb-xsm">
-        <div class="pr-xlg pt-sm bg-color-primary d-inline radius-sm"></div><span class="pl-sm text-bold">xlarge: 8rem</span>
-      </div>
-      <div class="mb-xsm">
-        <div class="pr-xxlg pt-sm bg-color-primary d-inline radius-sm"></div><span class="pl-sm text-bold">xxlarge: 16rem</span>
-      </div>
+                Avatars are user profile pictures.
+                </p>
 
+                <div class="row">
+                    <div class="col-sm-12 mt-md mb-md">
+
+                <figure class="avatar avatar-xl">
+                    <img src="dist/img/avatar-1.png" alt="...">
+                    </figure>
+            
+                    <figure class="avatar avatar-lg">
+                      <img src="dist/img/avatar-3.png" alt="...">
+                    </figure>
+            
+                    <figure class="avatar">
+                      <img src="dist/img/avatar-2.png" alt="...">
+                    </figure>
+            
+                    <figure class="avatar avatar-sm">
+                      <img src="dist/img/avatar-4.png" alt="...">
+                    </figure>
+            
+                    <figure class="avatar avatar-xsm">
+                      <img src="dist/img/avatar-5.png" alt="...">
+                    </figure>
+
+                    </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 mt-md mb-md">
+              
+                      <figure class="avatar avatar-xl" data-initial="JB">
+                      </figure>
+              
+                      <figure class="avatar avatar-lg" data-initial="JB">
+                      </figure>
+              
+                      <figure class="avatar" data-initial="JB">
+                      </figure>
+              
+                      <figure class="avatar avatar-sm" data-initial="JB">
+                      </figure>
+              
+                      <figure class="avatar avatar-xsm" data-initial="JB">
+                      </figure>
+              
+                      </div>
+                      </div>
+
+                    <p>Add the <code>avatar</code> class to &lt;figure&gt; element. There are 4 sizes modifier classes available, including <code>avatar-xl</code>(64px), <code>avatar-lg</code>(48px), <code>avatar-sm</code>(24px), and <code>avatar-xs</code>(16px).
+                        By default, the avatar size is 32px.
+                      </p>
+
+                      <p>
+                        For avatars that do not have profile pictures, you can use their initials for avatars with the default primary color as the background.
+                        Add the <code>data-initial</code> attribute with the users initials as the value.
+                      </p>
+
+
+                      <h3>Avatar Status</h3>
+                
+                      <div class="row">
+                        <div class="col-sm-12 mt-md mb-md">
+              
+                          <figure class="avatar avatar-xl">
+                            <img src="dist/img/avatar-1.png" alt="...">
+                            <i class="avatar-status online"></i>
+                          </figure>
+              
+                          <figure class="avatar avatar-xl">
+                            <img src="dist/img/avatar-3.png" alt="...">
+                            <i class="avatar-status busy"></i>
+                          </figure>
+              
+                          <figure class="avatar avatar-xl">
+                            <img src="dist/img/avatar-2.png" alt="...">
+                            <i class="avatar-status away"></i>
+                          </figure>
+              
+                          <figure class="avatar avatar-xl">
+                            <img src="dist/img/avatar-4.png" alt="...">
+                            <i class="avatar-status offline"></i>
+                          </figure>
+                        </div>
+                      </div>
+
+                      <p>
+                        The avatar component support status indicators. You can add an &lt;i&gt; element with the <code>avatar-status</code> class, and use one of the following modifier classes <code>online</code>, <code>busy</code> or <code>away</code> for different status colors. The default is gray indicating offline.
+                      </p>
 
               <footer>
                 <p>Designed and built with <span class="text-color-error">♥</span> by Jeff Bredenkamp. Licensed under the <a href="https://github.com/jeffbredenkamp/dragonfly/blob/main/LICENSE">MIT License</a>
