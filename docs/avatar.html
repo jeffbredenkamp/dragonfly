@@ -124,9 +124,9 @@
                 </p>
 
                 <div class="row">
-                    <div class="col-sm-12 mt-md mb-md">
+                    <div class="col-sm-12 mb-md">
 
-                <figure class="avatar avatar-xl">
+                    <figure class="avatar avatar-xl">
                     <img src="dist/img/avatar-1.png" alt="...">
                     </figure>
             
@@ -150,7 +150,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-12 mt-md mb-md">
+                        <div class="col-sm-12 mt-sm mb-sm">
               
                       <figure class="avatar avatar-xl" data-initial="JB">
                       </figure>
@@ -170,6 +170,13 @@
                       </div>
                       </div>
 
+<pre><code data-language="html">&lt;figure class="avatar"&gt;
+    &lt;img src="avatar-1.png" alt="..."&gt;
+&lt;/figure&gt;
+
+&lt;figure class="avatar" data-initial="JB"&gt;
+&lt;/figure&gt;</code></pre>
+
                     <p>Add the <code>avatar</code> class to &lt;figure&gt; element. There are 4 sizes modifier classes available, including <code>avatar-xl</code>(64px), <code>avatar-lg</code>(48px), <code>avatar-sm</code>(24px), and <code>avatar-xs</code>(16px).
                         By default, the avatar size is 32px.
                       </p>
@@ -183,7 +190,7 @@
                       <h3>Avatar Status</h3>
                 
                       <div class="row">
-                        <div class="col-sm-12 mt-md mb-md">
+                        <div class="col-sm-12 mt-sm mb-sm">
               
                           <figure class="avatar avatar-xl">
                             <img src="dist/img/avatar-1.png" alt="...">
@@ -206,6 +213,11 @@
                           </figure>
                         </div>
                       </div>
+
+<pre><code data-language="html">&lt;figure class="avatar"&gt;
+    &lt;img src="avatar-1.png" alt="..."&gt;
+    &lt;i class="avatar-status online"&gt;&lt;/i&gt;
+&lt;/figure&gt;</code></pre>
 
                       <p>
                         The avatar component support status indicators. You can add an &lt;i&gt; element with the <code>avatar-status</code> class, and use one of the following modifier classes <code>online</code>, <code>busy</code> or <code>away</code> for different status colors. The default is gray indicating offline.
