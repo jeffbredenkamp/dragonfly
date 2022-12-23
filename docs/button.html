@@ -121,110 +121,52 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <h2>Avatars</h2>
+              <h2>Buttons</h2>
               <p class="font-lg">
-                Avatars are user profile pictures.
+                Easy to use button styles with support for size and other modifiers.
                 </p>
 
-                <div class="row">
-                    <div class="col-sm-12 mb-xsm">
 
-                    <figure class="avatar avatar-xl">
-                    <img src="dist/img/avatar-1.png" alt="...">
-                    </figure>
-            
-                    <figure class="avatar avatar-lg">
-                      <img src="dist/img/avatar-3.png" alt="...">
-                    </figure>
-            
-                    <figure class="avatar">
-                      <img src="dist/img/avatar-2.png" alt="...">
-                    </figure>
-            
-                    <figure class="avatar avatar-sm">
-                      <img src="dist/img/avatar-4.png" alt="...">
-                    </figure>
-            
-                    <figure class="avatar avatar-xsm">
-                      <img src="dist/img/avatar-5.png" alt="...">
-                    </figure>
+                <h3>Examples</h3>
 
-                    </div>
-                    </div>
+                <a href="#" class="btn" role="button">Default Button</a>
+                <a href="#" class="btn btn-primary" role="button">Primary Button</a>
+                <a href="#" class="btn btn-secondary" role="button">Secondary Button</a>
+                <a href="#" class="btn btn-success" role="button">Success Button</a>
+                <a href="#" class="btn btn-warning" role="button">Warning Button</a>
+                <a href="#" class="btn btn-error" role="button">Error Button</a>
 
-                    <div class="row">
-                        <div class="col-sm-12 mt-sm mb-sm">
-              
-                      <figure class="avatar avatar-xl" data-initial="JB">
-                      </figure>
-              
-                      <figure class="avatar avatar-lg" data-initial="JB">
-                      </figure>
-              
-                      <figure class="avatar" data-initial="JB">
-                      </figure>
-              
-                      <figure class="avatar avatar-sm" data-initial="JB">
-                      </figure>
-              
-                      <figure class="avatar avatar-xsm" data-initial="JB">
-                      </figure>
-              
-                      </div>
-                      </div>
+                <h4>Size</h4>
 
-<pre><code data-language="html">&lt;figure class="avatar"&gt;
-    &lt;img src="avatar-1.png" alt="..."&gt;
-&lt;/figure&gt;
+                <a href="#" class="btn btn-primary btn-sm" role="button">Small Button</a>
+                <a href="#" class="btn btn-primary" role="button">Medium Button</a>
+                <a href="#" class="btn btn-primary btn-lg" role="button">Large Button</a>
 
-&lt;figure class="avatar" data-initial="JB"&gt;
-&lt;/figure&gt;</code></pre>
+                <h4>Disable</h4>
 
-                    <p>Add the <code>avatar</code> class to &lt;figure&gt; element. There are 4 sizes modifier classes available, including <code>avatar-xl</code>(64px), <code>avatar-lg</code>(48px), <code>avatar-sm</code>(24px), and <code>avatar-xs</code>(16px).
-                        By default, the avatar size is 32px.
-                      </p>
+                <a href="#" class="btn disabled" role="button" aria-disabled="true">Default Button</a>
+                <a href="#" class="btn btn-primary disabled" role="button" aria-disabled="true">Primary Button</a>
+                <a href="#" class="btn btn-secondary disabled" role="button" aria-disabled="true">Secondary Button</a>
+                <a href="#" class="btn btn-success disabled" role="button" aria-disabled="true">Success Button</a>
+                <a href="#" class="btn btn-warning disabled" role="button" aria-disabled="true">Warning Button</a>
+                <a href="#" class="btn btn-error disabled" role="button" aria-disabled="true">Error Button</a>
 
-                      <p>
-                        For avatars that do not have profile pictures, you can use their initials for avatars with the default primary color as the background.
-                        Add the <code>data-initial</code> attribute with the users initials as the value.
-                      </p>
+                <h3>Horizontal button group</h3>
 
+                <div class="btn-group btn-group-horizontal">
+                  <a href="#" class="btn" role="button">Cut</a>
+                  <a href="#" class="btn btn-outline" role="button">Copy</a>
+                  <a href="#" class="btn btn-outline" role="button">Paste</a>
+                  <a href="#" class="btn btn-outline" role="button">Delete</a>
+              </div>
 
-                      <h3>Avatar Status</h3>
-                
-                      <div class="row">
-                        <div class="col-sm-12 mt-sm mb-sm">
-              
-                          <figure class="avatar avatar">
-                            <img src="dist/img/avatar-1.png" alt="...">
-                            <i class="avatar-status online"></i>
-                          </figure>
-              
-                          <figure class="avatar avatar">
-                            <img src="dist/img/avatar-3.png" alt="...">
-                            <i class="avatar-status busy"></i>
-                          </figure>
-              
-                          <figure class="avatar avatar">
-                            <img src="dist/img/avatar-2.png" alt="...">
-                            <i class="avatar-status away"></i>
-                          </figure>
-              
-                          <figure class="avatar avatar">
-                            <img src="dist/img/avatar-4.png" alt="...">
-                            <i class="avatar-status offline"></i>
-                          </figure>
-                        </div>
-                      </div>
+              <h3>Vertical button group</h3>
 
-<pre><code data-language="html">&lt;figure class="avatar"&gt;
-    &lt;img src="avatar-1.png" alt="..."&gt;
-    &lt;i class="avatar-status online"&gt;&lt;/i&gt;
-&lt;/figure&gt;</code></pre>
-
-                      <p>
-                        The avatar component support status indicators. You can add an &lt;i&gt; element with the <code>avatar-status</code> class, and use one of the following modifier classes <code>online</code>, <code>busy</code> or <code>away</code> for different status colors. The default is gray indicating offline.
-                      </p>
+              <div class="btn-group btn-group-vertical">
+                <a href="#" class="btn" role="button">Pounds</a>
+                <a href="#" class="btn btn-outline" role="button">Euro</a>
+                <a href="#" class="btn btn-outline" role="button">Dollars</a>
+            </div>
 
               <footer>
                 <p>Designed and built with <span class="text-color-error">♥</span> by Jeff Bredenkamp. Licensed under the <a href="https://github.com/jeffbredenkamp/dragonfly/blob/main/LICENSE">MIT License</a>

@@ -1,0 +1,54 @@
+//
+// Progress
+// --------------------------------------------------
+
+// Bar
+
+.progress {
+    background: $color-neutral;
+    border-radius: 0.1rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    height: $spacing-xsm;
+    width: 100%;
+    border-radius: $radius-sm;
+    overflow: hidden;
+  
+    .progress-value {
+      background: $color-primary;
+      width: 0;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #fff;
+      font-size: $font-size-sm;
+      text-align: center;
+  
+      &.bg-color-error {
+        background: $color-error;
+      }
+      
+      &.bg-color-warning {
+        background: $color-warning;
+      }
+      
+      &.bg-color-success {
+        background: $color-success;
+      }
+  }
+  
+    &.progress-sm {
+      height: $spacing-xxsm;
+    }
+  
+    &.progress-lg {
+      height: $spacing-sm;
+    }
+  }

@@ -8,7 +8,7 @@
     background-color: $color-neutral;
     border-color: $color-neutral;
     text-align: center;
-    font-weight: $font-weight-bold;
+    font-weight: $font-weight-regular;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -53,6 +53,42 @@
         }
       }
 
+      &.btn-success {
+        color: #fff;
+        background-color: $color-success;
+        border-color: $color-success;
+        &:hover {
+          background-color: darken($color-success, 10%);
+          border-color: darken($color-success, 10%);
+        }
+      }
+      &.btn-warning {
+        color: #fff;
+        background-color: $color-warning;
+        border-color: $color-warning;
+        &:hover {
+          background-color: darken($color-warning, 10%);
+          border-color: darken($color-warning, 10%);
+        }
+      }
+      &.btn-error {
+        color: #fff;
+        background-color: $color-error;
+        border-color: $color-error;
+        &:hover {
+          background-color: darken($color-error, 10%);
+          border-color: darken($color-error, 10%);
+        }
+      }
+
+      // Disabled
+
+      &.disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+        opacity: 0.75;
+      }
+
       // Size
 
       &.btn-sm {
@@ -63,4 +99,57 @@
         padding: $spacing-sm $spacing-md;
         font-size: $font-size-lg;
       }
+}
+
+// Button Group
+
+.btn-group {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+
+  // Horizontal
+
+  &.btn-group-horizontal {
+    .btn {
+      &:not(:first-child):not(:last-child) {
+        border-radius: 0;
+        margin-left: -1px;
+      }
+      &:first-child {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      &:last-child {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-left: -1px;
+      }
+    }
+  }
+
+  // Vertical
+
+  &.btn-group-vertical {
+
+    .btn {
+      display: block;
+      margin-bottom: 0;
+      &:not(:first-child):not(:last-child) {
+        border-radius: 0;
+        margin-top: -1px;
+      }
+      &:first-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+      
+      &:last-child {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        margin-top: -1px;
+      }
+    }
+  }
 }
