@@ -340,6 +340,68 @@ code.code {
   margin-bottom: 1.5rem;
 }
 
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  line-height: 1.5;
+  padding: 0.75rem 0 0.375rem 0;
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: #253143;
+}
+.form-label.label-sm {
+  font-size: 0.75rem;
+  padding: 0.75rem;
+  padding-left: 0;
+}
+.form-label.label-lg {
+  font-size: 1.25rem;
+  padding: 1.5rem;
+  padding-left: 0;
+}
+
+.form-input {
+  appearance: none;
+  background: white;
+  background-image: none;
+  border-radius: 0.375rem;
+  border: 1px solid #cdd9ec;
+  color: #5c6b86;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 100%;
+  outline: none;
+  padding: 0.375rem 0.75rem;
+  position: relative;
+  transition: background 0.2s, border 0.2s, box-shadow 0.2s, color 0.2s;
+  width: 100%;
+}
+.form-input:focus {
+  border-color: #0c53fb;
+  box-shadow: 0 2px 4px rgba(205, 217, 236, 0.2);
+}
+
+.form-select {
+  border: 1px solid #cdd9ec;
+  border-radius: 0.375rem;
+  color: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  outline: none;
+  padding: 0.375rem;
+  vertical-align: middle;
+  width: 100%;
+  background: white;
+}
+.form-select:focus {
+  border-color: #0c53fb;
+  box-shadow: 0 2px 4px rgba(205, 217, 236, 0.2);
+}
+
 .label {
   background: #f2f5fa;
   border-radius: 0.375rem;
@@ -812,7 +874,7 @@ table tr td {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   margin-bottom: 0.25rem;
   font-family: "Inter", sans-serif;
-  box-shadow: 0 2px 4px rgba(216, 225, 240, 0.2);
+  box-shadow: 0 2px 4px rgba(205, 217, 236, 0.2);
   cursor: pointer;
   text-decoration: none;
 }
@@ -918,7 +980,7 @@ table tr td {
 }
 
 .card {
-  box-shadow: 0px 4px 20px 0px rgba(216, 225, 240, 0.3);
+  box-shadow: 0px 4px 20px 0px rgba(205, 217, 236, 0.3);
   border-bottom: 2px solid #0c53fb;
   border-radius: 0.375rem;
   background: white;
@@ -1068,6 +1130,10 @@ table tr td {
   margin: 0;
 }
 
+.p-xxsm {
+  padding: 0.375rem;
+}
+
 .p-xsm {
   padding: 0.75rem;
 }
@@ -1088,8 +1154,16 @@ table tr td {
   padding: 12rem;
 }
 
+.p-xxlg {
+  padding: 16rem;
+}
+
 .pt-0 {
   padding-top: 0;
+}
+
+.pt-xxsm {
+  padding-top: 0.375rem;
 }
 
 .pt-xsm {
@@ -1112,8 +1186,16 @@ table tr td {
   padding-top: 12rem;
 }
 
+.pt-xxlg {
+  padding-top: 16rem;
+}
+
 .pb-0 {
   padding-bottom: 0;
+}
+
+.pb-xxsm {
+  padding-bottom: 0.375rem;
 }
 
 .pb-xsm {
@@ -1134,6 +1216,10 @@ table tr td {
 
 .pb-xlg {
   padding-bottom: 12rem;
+}
+
+.pb-xxlg {
+  padding-bottom: 16rem;
 }
 
 .pr-0 {
@@ -1172,6 +1258,10 @@ table tr td {
   padding-left: 0;
 }
 
+.pl-xxsm {
+  padding-left: 0.375rem;
+}
+
 .pl-xsm {
   padding-left: 0.75rem;
 }
@@ -1192,8 +1282,16 @@ table tr td {
   padding-left: 12rem;
 }
 
+.pl-xxlg {
+  padding-left: 16rem;
+}
+
 .m-0 {
   margin: 0;
+}
+
+.m-xxsm {
+  margin: 0.375rem;
 }
 
 .m-xsm {
@@ -1216,8 +1314,16 @@ table tr td {
   margin: 12rem;
 }
 
+.m-xxlg {
+  margin: 16rem;
+}
+
 .mt-0 {
   margin-top: 0;
+}
+
+.mt-xxsm {
+  margin-top: 0.375rem;
 }
 
 .mt-xsm {
@@ -1240,8 +1346,16 @@ table tr td {
   margin-top: 12rem;
 }
 
+.mt-xxlg {
+  margin-top: 16rem;
+}
+
 .mb-0 {
   margin-bottom: 0;
+}
+
+.mb-xxsm {
+  margin-bottom: 0.375rem;
 }
 
 .mb-xsm {
@@ -1262,6 +1376,74 @@ table tr td {
 
 .mb-xlg {
   margin-bottom: 12rem;
+}
+
+.mb-xxlg {
+  margin-bottom: 16rem;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.mr-xxsm {
+  margin-right: 0.375rem;
+}
+
+.mr-xsm {
+  margin-right: 0.75rem;
+}
+
+.mr-sm {
+  margin-right: 1.5rem;
+}
+
+.mr-md {
+  margin-right: 3rem;
+}
+
+.mr-lg {
+  margin-right: 6rem;
+}
+
+.mr-xlg {
+  margin-right: 12rem;
+}
+
+.mr-xxlg {
+  margin-right: 16rem;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.ml-xxsm {
+  margin-left: 0.375rem;
+}
+
+.ml-xsm {
+  margin-left: 0.75rem;
+}
+
+.ml-sm {
+  margin-left: 1.5rem;
+}
+
+.ml-md {
+  margin-left: 3rem;
+}
+
+.ml-lg {
+  margin-left: 6rem;
+}
+
+.ml-xlg {
+  margin-left: 12rem;
+}
+
+.mr-xxlg {
+  margin-right: 16rem;
 }
 
 .font-sm {

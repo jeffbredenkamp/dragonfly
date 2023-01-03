@@ -14,11 +14,12 @@ $color-neutral: #f2f5fa;
 $color-neutral-lighter: lighten($color-neutral, 7%);
 $color-neutral-light: lighten($color-neutral, 5%);
 $color-neutral-dark: darken($color-neutral, 5%);
-$color-neutral-darker: darken($color-neutral, 7%);
+$color-neutral-darker: darken($color-neutral, 10%);
 
 // Success
 $color-success: #03A55A;
-$color-success-lighter: lighten($color-success, 10%);
+$color-success-light: lighten($color-success, 10%);
+$color-success-lighter: lighten($color-success, 35%);
 
 // Warning
 $color-warning: #EE8D31;
@@ -69,9 +70,12 @@ $radius-md: .75rem;
 $radius-lg: 1.5rem;
 
 // Box Shadow
-
 $shadow-xsm: 0 2px 4px rgba($color-neutral-darker, 0.2);
 $shadow-md: 0px 4px 20px 0px rgb($color-neutral-darker, 0.3);
+
+// Border width
+$border-width-sm: 1px;
+$border-width-lg: 4px;
 
 $layout-spacing: $spacing-xsm;
 $layout-spacing-sm: $spacing-sm;

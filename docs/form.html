@@ -55,7 +55,7 @@
                 </li>
               </ul>
             </li>
-            <li class="a-container">
+            <li class="a-container active">
               <button class="a-btn">
                 <i class="fa-solid fa-laptop-code"></i> Elements <span></span>
               </button>
@@ -73,7 +73,7 @@
                 </li>
               </ul>
             </li>
-            <li class="a-container active">
+            <li class="a-container">
               <button class="a-btn">
                 <i class="fa-solid fa-layer-group"></i> Components <span></span>
               </button>
@@ -104,110 +104,87 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <h2>Avatars</h2>
+              <h2>Forms</h2>
               <p class="font-lg">
-                Avatars are user profile pictures.
-                </p>
+                Clean simple form styles.</p>
+
+
+                <h3>Input</h3>
+
+                <p>Basic input with labels.</p>
 
                 <div class="row">
-                    <div class="col-sm-12 mb-xsm">
-
-                    <figure class="avatar avatar-xl">
-                    <img src="dist/img/avatar-1.png" alt="...">
-                    </figure>
-            
-                    <figure class="avatar avatar-lg">
-                      <img src="dist/img/avatar-3.png" alt="...">
-                    </figure>
-            
-                    <figure class="avatar">
-                      <img src="dist/img/avatar-2.png" alt="...">
-                    </figure>
-            
-                    <figure class="avatar avatar-sm">
-                      <img src="dist/img/avatar-4.png" alt="...">
-                    </figure>
-            
-                    <figure class="avatar avatar-xsm">
-                      <img src="dist/img/avatar-5.png" alt="...">
-                    </figure>
-
-                    </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-12 mt-sm mb-sm">
-              
-                      <figure class="avatar avatar-xl" data-initial="JB">
-                      </figure>
-              
-                      <figure class="avatar avatar-lg" data-initial="JB">
-                      </figure>
-              
-                      <figure class="avatar" data-initial="JB">
-                      </figure>
-              
-                      <figure class="avatar avatar-sm" data-initial="JB">
-                      </figure>
-              
-                      <figure class="avatar avatar-xsm" data-initial="JB">
-                      </figure>
-              
+                  <div class="col-sm-6">
+                    <form>
+                      <div class="form-group">
+                        <label class="form-label" for="example-email-input-1">Email</label>
+                        <input type="email" class="form-input" id="example-email-input-1" placeholder="Email">
+    
+                        <label class="form-label"l for="example-password-input-1">Password</label>
+                        <input type="password" class="form-input" id="example-password-input-1" placeholder="Password">
                       </div>
-                      </div>
+                    </form>
+                  </div>
+                </div>
 
-<pre><code data-language="html">&lt;figure class="avatar"&gt;
-    &lt;img src="avatar-1.png" alt="..."&gt;
-&lt;/figure&gt;
+<pre><code data-language="html">&lt;class="form-group"&gt;
+  &lt;label class="form-label" for="input-example"&gt;Email&lt;/label&gt;
+  &lt;input type="email" class="form-input" id="input-example" placeholder="Email"&gt;
+&lt;/div&gt;
+</code></pre>
 
-&lt;figure class="avatar" data-initial="JB"&gt;
-&lt;/figure&gt;</code></pre>
+                <h3>Text Box</h3>
 
-                    <p>Add the <code>avatar</code> class to &lt;figure&gt; element. There are 4 sizes modifier classes available, including <code>avatar-xl</code>(96px), <code>avatar-lg</code>(60px), <code>avatar-sm</code>(36px), and <code>avatar-xs</code>(24px).
-                        By default, the avatar size is 48px.
-                      </p>
+                <p>The <code>textarea</textarea></code> element creates a multi-line text input.</p>
+                <div class="row">
+                  <div class="col-sm-6">
+                <div class="form-group">
+                  <label class="form-label" for="example-text-box-input">Form Label</label>
+                  <textarea class="form-input" id="example-text-box-input" placeholder="Text box area" rows="4"></textarea>
+                </div>
+                </div>
+                </div>
 
-                      <p>
-                        For avatars that do not have profile pictures, you can use their initials for avatars with the default primary color as the background.
-                        Add the <code>data-initial</code> attribute with the users initials as the value.
-                      </p>
+<pre><code data-language="html">&lt;class="form-group"&gt;
+  &lt;label class="form-label" for="example-text-box-input">Form Label&lt;/label&gt;
+  &lt;textarea class="form-input" id="example-text-box-input" placeholder="Text box area" rows="4"&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+</code></pre>
+
+                <h3>Select</h3>
+
+                <p>Use select menus to combine many choices into one dropdown menu.</p>
+
+                <div class="row">
+                  <div class="col-sm-6">
+                <div class="form-group">
+                  <label>
+                    Select Menu
+                  <select class="form-select">
+                    <option>Choose an option</option>
+                    <option>Pound</option>
+                    <option>Euro</option>
+                    <option>Dollar</option>
+                  </select>
+                </label>
+                </div>
+                </div>
+                </div>
+
+<pre><code data-language="html">&lt;class="form-group"&gt;
+  &lt;label&gt;
+    Select Menu
+    &lt;select class="form-select"&gt;
+      &lt;option&gt;Choose an option&lt;/option&gt;
+      &lt;option&gt;Pound&lt;/option&gt;
+      &lt;option&gt;Euro&lt;/option&gt;
+      &lt;option&gt;Dollar&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
 
 
-                      <h3>Avatar Status</h3>
-                
-                      <div class="row">
-                        <div class="col-sm-12 mt-sm mb-sm">
-              
-                          <figure class="avatar avatar">
-                            <img src="dist/img/avatar-1.png" alt="...">
-                            <i class="avatar-status online"></i>
-                          </figure>
-              
-                          <figure class="avatar avatar">
-                            <img src="dist/img/avatar-3.png" alt="...">
-                            <i class="avatar-status busy"></i>
-                          </figure>
-              
-                          <figure class="avatar avatar">
-                            <img src="dist/img/avatar-2.png" alt="...">
-                            <i class="avatar-status away"></i>
-                          </figure>
-              
-                          <figure class="avatar avatar">
-                            <img src="dist/img/avatar-4.png" alt="...">
-                            <i class="avatar-status offline"></i>
-                          </figure>
-                        </div>
-                      </div>
-
-<pre><code data-language="html">&lt;figure class="avatar"&gt;
-    &lt;img src="avatar-1.png" alt="..."&gt;
-    &lt;i class="avatar-status online"&gt;&lt;/i&gt;
-&lt;/figure&gt;</code></pre>
-
-                      <p>
-                        The avatar component support status indicators. You can add an &lt;i&gt; element with the <code>avatar-status</code> class, and use one of the following modifier classes <code>online</code>, <code>busy</code> or <code>away</code> for different status colors. The default is gray indicating offline.
-                      </p>
 
               <footer>
                 <p>Designed and built with <span class="text-color-error">♥</span> by Jeff Bredenkamp. Licensed under the <a href="https://github.com/jeffbredenkamp/dragonfly/blob/main/LICENSE">MIT License</a>

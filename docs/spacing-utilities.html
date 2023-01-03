@@ -73,7 +73,7 @@
                 </li>
               </ul>
             </li>
-            <li class="a-container active">
+            <li class="a-container">
               <button class="a-btn">
                 <i class="fa-solid fa-layer-group"></i> Components <span></span>
               </button>
@@ -89,7 +89,7 @@
                 </li>
               </ul>
             </li>
-            <li class="a-container">
+            <li class="a-container active">
               <button class="a-btn">
                 <i class="fa-solid fa-screwdriver-wrench"></i> Utilities <span></span>
               </button>
@@ -104,110 +104,57 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <h2>Avatars</h2>
+              <h2>Spacing Utilities</h2>
               <p class="font-lg">
-                Avatars are user profile pictures.
-                </p>
-
-                <div class="row">
-                    <div class="col-sm-12 mb-xsm">
-
-                    <figure class="avatar avatar-xl">
-                    <img src="dist/img/avatar-1.png" alt="...">
-                    </figure>
-            
-                    <figure class="avatar avatar-lg">
-                      <img src="dist/img/avatar-3.png" alt="...">
-                    </figure>
-            
-                    <figure class="avatar">
-                      <img src="dist/img/avatar-2.png" alt="...">
-                    </figure>
-            
-                    <figure class="avatar avatar-sm">
-                      <img src="dist/img/avatar-4.png" alt="...">
-                    </figure>
-            
-                    <figure class="avatar avatar-xsm">
-                      <img src="dist/img/avatar-5.png" alt="...">
-                    </figure>
-
-                    </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-12 mt-sm mb-sm">
+                Margin and padding utility classes to modify an element's appearance.
+              </p>
               
-                      <figure class="avatar avatar-xl" data-initial="JB">
-                      </figure>
-              
-                      <figure class="avatar avatar-lg" data-initial="JB">
-                      </figure>
-              
-                      <figure class="avatar" data-initial="JB">
-                      </figure>
-              
-                      <figure class="avatar avatar-sm" data-initial="JB">
-                      </figure>
-              
-                      <figure class="avatar avatar-xsm" data-initial="JB">
-                      </figure>
-              
-                      </div>
-                      </div>
+              <p>The spacing utility classes are named using the property, side and size convention. For example margin (property) top (side) and sm (size).</p>
 
-<pre><code data-language="html">&lt;figure class="avatar"&gt;
-    &lt;img src="avatar-1.png" alt="..."&gt;
-&lt;/figure&gt;
+              <h3>Examples</h3>
 
-&lt;figure class="avatar" data-initial="JB"&gt;
-&lt;/figure&gt;</code></pre>
+<pre><code data-language="html">&lt;!-- Margin top small --&gt;
+&lt;div class="mt-sm"&gt;&lt;/div&gt;
 
-                    <p>Add the <code>avatar</code> class to &lt;figure&gt; element. There are 4 sizes modifier classes available, including <code>avatar-xl</code>(96px), <code>avatar-lg</code>(60px), <code>avatar-sm</code>(36px), and <code>avatar-xs</code>(24px).
-                        By default, the avatar size is 48px.
-                      </p>
+&lt;!-- Padding right medium --&gt;
+&lt;div class="pr-md"&gt;&lt;/div&gt;
 
-                      <p>
-                        For avatars that do not have profile pictures, you can use their initials for avatars with the default primary color as the background.
-                        Add the <code>data-initial</code> attribute with the users initials as the value.
-                      </p>
+&lt;!-- Padding all sides large --&gt;
+&lt;div class="p-lg"&gt;&lt;/div&gt;
+</code></pre>  
 
+              <h6>Property</h6>
 
-                      <h3>Avatar Status</h3>
-                
-                      <div class="row">
-                        <div class="col-sm-12 mt-sm mb-sm">
-              
-                          <figure class="avatar avatar">
-                            <img src="dist/img/avatar-1.png" alt="...">
-                            <i class="avatar-status online"></i>
-                          </figure>
-              
-                          <figure class="avatar avatar">
-                            <img src="dist/img/avatar-3.png" alt="...">
-                            <i class="avatar-status busy"></i>
-                          </figure>
-              
-                          <figure class="avatar avatar">
-                            <img src="dist/img/avatar-2.png" alt="...">
-                            <i class="avatar-status away"></i>
-                          </figure>
-              
-                          <figure class="avatar avatar">
-                            <img src="dist/img/avatar-4.png" alt="...">
-                            <i class="avatar-status offline"></i>
-                          </figure>
-                        </div>
-                      </div>
+              <ul>
+                <li><code>m</code></li>
+                <li><code>p</code></li>
+              </ul>
 
-<pre><code data-language="html">&lt;figure class="avatar"&gt;
-    &lt;img src="avatar-1.png" alt="..."&gt;
-    &lt;i class="avatar-status online"&gt;&lt;/i&gt;
-&lt;/figure&gt;</code></pre>
+              <h6>Side</h6>
 
-                      <p>
-                        The avatar component support status indicators. You can add an &lt;i&gt; element with the <code>avatar-status</code> class, and use one of the following modifier classes <code>online</code>, <code>busy</code> or <code>away</code> for different status colors. The default is gray indicating offline.
-                      </p>
+              <ul>
+                <li><code>t</code> - set the padding or margin top only</li>
+                <li><code>b</code> - set the padding or margin bottom only</li>
+                <li><code>r</code> - set the padding or margin right only</li>
+                <li><code>l</code> - set the padding or margin left only</li>
+                <li><code>x</code> - set the padding or margin left and right only</li>
+                <li><code>y</code> - set the padding or margin top and bottom only</li>
+                <li>Blank - set the padding or margin on all 4 sides.</li>
+              </ul>
+
+              <h6>Size</h6>
+
+              <ul>
+                <li><code>0</code> - set size to 0</li>
+                <li><code>xxsm</code> - set size to .375rem</li>
+                <li><code>xsm</code> - set size to .75rem</li>
+                <li><code>sm</code> - set size to 1.5rem</li>
+                <li><code>md</code> - set size to 3rem</li>
+                <li><code>lg</code> - set size to 6rem</li>
+                <li><code>xlg</code> - set size to 12rem</li>
+                <li><code>xxlg</code> - set size to 16rem</li>
+              </ul>
+
 
               <footer>
                 <p>Designed and built with <span class="text-color-error">♥</span> by Jeff Bredenkamp. Licensed under the <a href="https://github.com/jeffbredenkamp/dragonfly/blob/main/LICENSE">MIT License</a>

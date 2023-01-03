@@ -8,6 +8,10 @@
     margin: 0;
 }
 
+.p-xxsm {
+    padding: $spacing-xxsm;
+}
+
 .p-xsm {
     padding: $spacing-xsm;
 }
@@ -28,10 +32,18 @@
     padding: $spacing-xlg;
 }
 
+.p-xxlg {
+    padding: $spacing-xxlg;
+}
+
 // Padding Top
 
 .pt-0 {
     padding-top: 0;
+}
+
+.pt-xxsm {
+    padding-top: $spacing-xxsm;
 }
 
 .pt-xsm {
@@ -54,10 +66,18 @@
     padding-top: $spacing-xlg;
 }
 
+.pt-xxlg {
+    padding-top: $spacing-xxlg;
+}
+
 // Padding Bottom
 
 .pb-0 {
     padding-bottom: 0;
+}
+
+.pb-xxsm {
+    padding-bottom: $spacing-xxsm;
 }
 
 .pb-xsm {
@@ -78,6 +98,10 @@
 
 .pb-xlg {
     padding-bottom: $spacing-xlg;
+}
+
+.pb-xxlg {
+    padding-bottom: $spacing-xxlg;
 }
 
 // Padding Right
@@ -120,6 +144,10 @@
     padding-left: 0;
 }
 
+.pl-xxsm {
+    padding-left: $spacing-xxsm;
+}
+
 .pl-xsm {
     padding-left: $spacing-xsm;
 }
@@ -140,10 +168,18 @@
     padding-left: $spacing-xlg;
 }
 
+.pl-xxlg {
+    padding-left: $spacing-xxlg;
+}
+
 // Margin All
 
 .m-0 {
     margin: 0;
+}
+
+.m-xxsm {
+    margin: $spacing-xxsm;
 }
 
 .m-xsm {
@@ -166,11 +202,20 @@
     margin: $spacing-xlg;
 }
 
+.m-xxlg {
+    margin: $spacing-xxlg;
+}
+
 // Margin Top
 
 .mt-0 {
     margin-top: 0;
 }
+
+.mt-xxsm {
+    margin-top: $spacing-xxsm;
+}
+
 
 .mt-xsm {
     margin-top: $spacing-xsm;
@@ -192,10 +237,18 @@
     margin-top: $spacing-xlg;
 }
 
+.mt-xxlg {
+    margin-top: $spacing-xxlg;
+}
+
 // Margin Bottom
 
 .mb-0 {
     margin-bottom: 0;
+}
+
+.mb-xxsm {
+    margin-bottom: $spacing-xxsm;
 }
 
 .mb-xsm {
@@ -216,4 +269,76 @@
 
 .mb-xlg {
     margin-bottom: $spacing-xlg;
+}
+
+.mb-xxlg {
+    margin-bottom: $spacing-xxlg;
+}
+
+// Margin Right
+
+.mr-0 {
+    margin-right: 0;
+}
+
+.mr-xxsm {
+    margin-right: $spacing-xxsm;
+}
+
+.mr-xsm {
+    margin-right: $spacing-xsm;
+}
+
+.mr-sm {
+    margin-right: $spacing-sm;
+}
+
+.mr-md {
+    margin-right: $spacing-md;
+}
+
+.mr-lg {
+    margin-right: $spacing-lg;
+}
+
+.mr-xlg {
+    margin-right: $spacing-xlg;
+}
+
+.mr-xxlg {
+    margin-right: $spacing-xxlg;
+}
+
+// Margin Left
+
+.ml-0 {
+    margin-left: 0;
+}
+
+.ml-xxsm {
+    margin-left: $spacing-xxsm;
+}
+
+.ml-xsm {
+    margin-left: $spacing-xsm;
+}
+
+.ml-sm {
+    margin-left: $spacing-sm;
+}
+
+.ml-md {
+    margin-left: $spacing-md;
+}
+
+.ml-lg {
+    margin-left: $spacing-lg;
+}
+
+.ml-xlg {
+    margin-left: $spacing-xlg;
+}
+
+.mr-xxlg {
+    margin-right: $spacing-xxlg;
 }

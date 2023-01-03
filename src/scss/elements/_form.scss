@@ -1,0 +1,77 @@
+//
+// Forms
+// --------------------------------------------------
+
+// Form group
+
+.form-group {
+      margin-bottom: $spacing-sm;
+  }
+
+// Label
+
+// Form element: Label
+.form-label {
+    display: block;
+    line-height: $line-height-md;
+    padding: $spacing-xsm 0 $spacing-xxsm 0;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-sm;
+    color: $color-heading;
+  
+    &.label-sm {
+      font-size: $font-size-sm;
+      padding: $spacing-xsm;
+      padding-left: 0;
+    }
+  
+    &.label-lg {
+      font-size: $font-size-lg;
+      padding: $spacing-sm;
+      padding-left: 0;
+    }
+  }
+
+  // Form Input
+
+  .form-input {
+    appearance: none;
+    background: $color-neutral-light;
+    background-image: none;
+    border-radius: $radius-sm;
+    border: $border-width-sm solid $color-neutral-darker;
+    color: $color-text;
+    display: block;
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+    max-width: 100%;
+    outline: none;
+    padding: $spacing-xxsm $spacing-xsm;
+    position: relative;
+    transition: background .2s, border .2s, box-shadow .2s, color .2s;
+    width: 100%;
+
+    &:focus {
+        border-color: $color-primary;
+        box-shadow: $shadow-xsm;
+      }
+  }
+
+  // Select
+.form-select {
+    border: $border-width-sm solid $color-neutral-darker;
+    border-radius: $radius-sm;
+    color: inherit;
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+    outline: none;
+    padding: $spacing-xxsm;
+    vertical-align: middle;
+    width: 100%;
+    background: $color-neutral-lighter;
+
+    &:focus {
+      border-color: $color-primary;
+      box-shadow: $shadow-xsm;
+    }
+}
